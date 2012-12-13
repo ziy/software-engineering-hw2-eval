@@ -162,7 +162,7 @@
     <dependency>
       <groupId>edu.cmu.lti.11791.f12.hw2</groupId>
       <artifactId>hw2-team18</artifactId>
-      <version>0.0.5</version>
+      <version>0.0.6</version>
     </dependency>
   </dependencies>
   <scm>
