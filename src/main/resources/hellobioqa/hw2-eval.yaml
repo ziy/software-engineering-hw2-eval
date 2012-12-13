@@ -136,7 +136,7 @@ pipeline:
       # hw2-team08-0.0.5
       - inherit: hellobioqa.passage.nooverlaps-passage-extractor
       # hw2-team09-3.0.2
-      - inherit: hellobioqa.team09.mysimple-solr-strategist
+      - inherit: hellobioqa.team09.lingpengext
       # hw2-team10-0.0.5
       - inherit: hellobioqa.team10.passage.alkesh-solr-leganspan-passage
       # hw2-team12-0.0.6
