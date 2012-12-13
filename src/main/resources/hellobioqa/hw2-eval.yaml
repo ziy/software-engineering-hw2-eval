@@ -29,7 +29,7 @@ pipeline:
       - inherit: hellobioqa.team06.keyterm.Shu_Hao_DisExtractor
       # hw2-team07-0.0.9
       - inherit: hellobioqa.team07.huanchez.agg-keyterm-extractor
-      # hw2-team08-0.0.5
+      # hw2-team08-0.0.13
       - inherit: hellobioqa.team08.combination-extractor
       # hw2-team09-3.0.2
       - inherit: hellobioqa.team09.keyterm-lingpeng
@@ -98,7 +98,7 @@ pipeline:
       - inherit: hellobioqa.team06.retrieval.simple-solr-strategist
       # hw2-team07-0.0.9
       - inherit: hellobioqa.retrieval.expanded-bio-solr-strategist
-      # hw2-team08-0.0.5
+      # hw2-team08-0.0.13
       - inherit: hellobioqa.retrieval.query-expansion-strategist
       # hw2-team09-3.0.2
       - inherit: hellobioqa.team09.mysimple-solr-strategist
@@ -139,7 +139,7 @@ pipeline:
       - inherit: hellobioqa.team06.passage.simple
       # hw2-team07-0.0.9
       - inherit: hellobioqa.passage.MITRE_revised
-      # hw2-team08-0.0.5
+      # hw2-team08-0.0.5 # can be removed
       - inherit: hellobioqa.passage.nooverlaps-passage-extractor
       # hw2-team09-3.0.2
       - inherit: hellobioqa.team09.lingpengext
