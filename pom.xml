@@ -60,13 +60,8 @@
         </executions>
         <configuration>
           <executable>java</executable>
+          <mainClass>edu.cmu.lti.oaqa.ecd.driver.ECDDriver</mainClass>
           <arguments>
-            <argument>-Djava.library.path=${project.build.directory}/lib/</argument>
-            <argument>-classpath</argument>
-            <!-- automatically creates the classpath using all 
-              project dependencies, also adding the project build directory -->
-            <classpath />
-            <argument>edu.cmu.lti.oaqa.ecd.driver.ECDDriver</argument>
             <argument>hellobioqa.hw2-eval</argument>
           </arguments>
         </configuration>
