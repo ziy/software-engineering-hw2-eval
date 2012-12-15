@@ -65,7 +65,7 @@
             <argument>-classpath</argument>
             <!-- automatically creates the classpath using all 
               project dependencies, also adding the project build directory -->
-            <classpath />
+            <!-- <classpath /> -->
             <argument>edu.cmu.lti.oaqa.ecd.driver.ECDDriver</argument>
             <argument>hellobioqa.hw2-eval</argument>
           </arguments>
