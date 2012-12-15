@@ -27,7 +27,7 @@ pipeline:
       - inherit: hellobioqa.keyterm.parser
       # hw2-team06-0.0.7
       - inherit: hellobioqa.team06.keyterm.Shu_Hao_DisExtractor
-      # hw2-team07-0.0.9
+      # hw2-team07-0.0.15
       - inherit: hellobioqa.team07.huanchez.agg-keyterm-extractor
       # hw2-team08-0.0.13
       - inherit: hellobioqa.team08.combination-extractor
@@ -45,7 +45,7 @@ pipeline:
       - inherit: hellobioqa.team15.keyterm.CthayurPosTagKeyTermExtractorDescriptor
       # hw2-team16-0.0.10
       - inherit: hellobioqa.keyterm.shirley-keyterm-extractor
-      # hw2-team17-1.0.8
+      # hw2-team17-1.0.10
       - inherit: hellobioqa.team17.keyterm.team17-keyterm-extractor
       # hw2-team18-0.0.6
       - inherit: hellobioqa.team18.keyterm.aggregated-extractor
@@ -70,7 +70,7 @@ pipeline:
         - inherit: hellobioqa.team06.keyterm.ShuLingPipeTermUpdater # keyterm-updater1
         - inherit: hellobioqa.team06.keyterm.ShuBannerUpdater # keyterm-updater2
         - inherit: hellobioqa.team06.keyterm.ShuNLPVerbTermUpdater # keyterm-updater3
-      # hw2-team07-0.0.9
+      # hw2-team07-0.0.15
       - pipeline:  
         - inherit: hellobioqa.team07.huanchez.crf-keyterm-extractor # keyterm-updator1
         - inherit: hellobioqa.team07.huanchez.abner-keyterm-extractor # keyterm-updator2
@@ -96,7 +96,7 @@ pipeline:
       - inherit: hellobioqa.retrieval.husky-strategist
       # hw2-team06-0.0.7
       - inherit: hellobioqa.team06.retrieval.simple-solr-strategist
-      # hw2-team07-0.0.9
+      # hw2-team07-0.0.15
       - inherit: hellobioqa.retrieval.expanded-bio-solr-strategist
       # hw2-team08-0.0.13
       - inherit: hellobioqa.retrieval.query-expansion-strategist
@@ -116,7 +116,7 @@ pipeline:
       - inherit: hellobioqa.team15.retrieval.mingyans-solr-strategist
       # hw2-team16-0.0.10
       - inherit: hellobioqa.retrieval.heuristic-solr-strategist
-      # hw2-team17-1.0.8
+      # hw2-team17-1.0.10
       - inherit: hellobioqa.team17.retrieval.team17-solr-strategist
       # hw2-team18-0.0.6
       - inherit: hellobioqa.team18.retrieval.retrieval-base
@@ -137,7 +137,7 @@ pipeline:
       - inherit: hellobioqa.passage.phani
       # hw2-team06-0.0.20
       - inherit: hellobioqa.team06.passage.simple
-      # hw2-team07-0.0.9
+      # hw2-team07-0.0.15
       - inherit: hellobioqa.passage.MITRE_revised
       # hw2-team08-0.0.5 # can be removed
       - inherit: hellobioqa.passage.nooverlaps-passage-extractor
@@ -155,7 +155,7 @@ pipeline:
       - inherit: hellobioqa.team15.passage.mingyans-passage
       # hw2-team16-0.0.10
       - inherit: hellobioqa.passage.sesh-passage-extractor
-      # hw2-team17-1.0.8
+      # hw2-team17-1.0.10
       - inherit: hellobioqa.team17.passage.team17-passage-extract
       # hw2-team18-0.0.6
       - inherit: hellobioqa.team18.passage.PassageRetrieval
