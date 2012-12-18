@@ -19,7 +19,7 @@ pipeline:
       - inherit: helloqa.keyterm.simple
       # hw2-team01-0.0.8
       - inherit: hellobioqa.team01.keyterm.null
-      # hw2-team02-1.0.6
+      # hw2-team02-1.0.7
       - inherit: hellobioqa.team02.keyterm.keyterm
       # hw2-team03-0.0.11
       - inherit: hellobioqa.team03.keyterm.team03-keyterm
@@ -86,7 +86,7 @@ pipeline:
     options: |
       # default
       - inherit: hellobioqa.retrieval.simple-solr-strategist
-      # hw2-team02-1.0.6
+      # hw2-team02-1.0.7
       - inherit: hellobioqa.team02.retrieval.retrieval
       # hw2-team03-0.0.11
       - inherit: hellobioqa.team03.retrieval.team03-solr-strategist
@@ -127,7 +127,7 @@ pipeline:
     options: |
       # default
       - inherit: hellobioqa.passage.simple
-      # hw2-team02-1.0.6
+      # hw2-team02-1.0.7
       - inherit: hellobioqa.team02.passage.passage
       # hw2-team03-0.0.11
       - inherit: hellobioqa.team03.passage.team03-passage
