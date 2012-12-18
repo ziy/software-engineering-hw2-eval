@@ -106,12 +106,6 @@
       <groupId>edu.cmu.lti.11791.f12.hw2</groupId>
       <artifactId>hw2-team04</artifactId>
       <version>0.0.82</version>
-      <exclusions>
-        <exclusion>
-          <artifactId>helloqa</artifactId>
-          <groupId>edu.cmu.lti.oaqa.openqa</groupId>
-        </exclusion>
-      </exclusions>
     </dependency>
     <dependency>
       <groupId>edu.cmu.lti.11791.f12.hw2</groupId>
@@ -149,7 +143,7 @@
     <dependency>
       <groupId>edu.cmu.lti.11791.f12.hw2</groupId>
       <artifactId>hw2-team08</artifactId>
-      <version>0.0.19</version>
+      <version>0.0.21</version>
       <exclusions>
         <exclusion>
           <artifactId>helloqa</artifactId>
@@ -266,11 +260,6 @@
           <groupId>edu.cmu.lti.oaqa.openqa</groupId>
         </exclusion>
       </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>edu.cmu.lti.oaqa.openqa</groupId>
-      <artifactId>helloqa</artifactId>
-      <version>1.0.1</version>
     </dependency>
   </dependencies>
   <scm>
