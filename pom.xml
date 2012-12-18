@@ -72,92 +72,205 @@
     <dependency>
       <groupId>edu.cmu.lti.11791.f12.hw2</groupId>
       <artifactId>hw2-team01</artifactId>
-      <version>0.0.7</version>
+      <version>0.0.8</version>
+      <exclusions>
+        <exclusion>
+          <artifactId>helloqa</artifactId>
+          <groupId>edu.cmu.lti.oaqa.openqa</groupId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>edu.cmu.lti.11791.f12.hw2</groupId>
       <artifactId>hw2-team02</artifactId>
       <version>1.0.6</version>
+      <exclusions>
+        <exclusion>
+          <artifactId>helloqa</artifactId>
+          <groupId>edu.cmu.lti.oaqa.openqa</groupId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>edu.cmu.lti.11791.f12.hw2</groupId>
       <artifactId>hw2-team03</artifactId>
-      <version>0.0.10</version>
+      <version>0.0.11</version>
+      <exclusions>
+        <exclusion>
+          <artifactId>helloqa</artifactId>
+          <groupId>edu.cmu.lti.oaqa.openqa</groupId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>edu.cmu.lti.11791.f12.hw2</groupId>
       <artifactId>hw2-team04</artifactId>
       <version>0.0.82</version>
+      <exclusions>
+        <exclusion>
+          <artifactId>helloqa</artifactId>
+          <groupId>edu.cmu.lti.oaqa.openqa</groupId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>edu.cmu.lti.11791.f12.hw2</groupId>
       <artifactId>hw2-team05</artifactId>
       <version>0.0.20</version>
+      <exclusions>
+        <exclusion>
+          <artifactId>helloqa</artifactId>
+          <groupId>edu.cmu.lti.oaqa.openqa</groupId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>edu.cmu.lti.11791.f12.hw2</groupId>
       <artifactId>hw2-team06</artifactId>
       <version>0.0.7</version>
+      <exclusions>
+        <exclusion>
+          <artifactId>helloqa</artifactId>
+          <groupId>edu.cmu.lti.oaqa.openqa</groupId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>edu.cmu.lti.11791.f12.hw2</groupId>
       <artifactId>hw2-team07</artifactId>
       <version>0.0.20</version>
+      <exclusions>
+        <exclusion>
+          <artifactId>helloqa</artifactId>
+          <groupId>edu.cmu.lti.oaqa.openqa</groupId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>edu.cmu.lti.11791.f12.hw2</groupId>
       <artifactId>hw2-team08</artifactId>
-      <version>0.0.13</version>
+      <version>0.0.19</version>
+      <exclusions>
+        <exclusion>
+          <artifactId>helloqa</artifactId>
+          <groupId>edu.cmu.lti.oaqa.openqa</groupId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>edu.cmu.lti.11791.f12.hw2</groupId>
       <artifactId>hw2-team09</artifactId>
       <version>3.0.2</version>
+      <exclusions>
+        <exclusion>
+          <artifactId>helloqa</artifactId>
+          <groupId>edu.cmu.lti.oaqa.openqa</groupId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>edu.cmu.lti.11791.f12.hw2</groupId>
       <artifactId>hw2-team10</artifactId>
       <version>0.0.5</version>
+      <exclusions>
+        <exclusion>
+          <artifactId>helloqa</artifactId>
+          <groupId>edu.cmu.lti.oaqa.openqa</groupId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>edu.cmu.lti.11791.f12.hw2</groupId>
       <artifactId>hw2-team11</artifactId>
       <version>0.0.9</version>
+      <exclusions>
+        <exclusion>
+          <artifactId>helloqa</artifactId>
+          <groupId>edu.cmu.lti.oaqa.openqa</groupId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>edu.cmu.lti.11791.f12.hw2</groupId>
       <artifactId>hw2-team12</artifactId>
       <version>0.0.6</version>
+      <exclusions>
+        <exclusion>
+          <artifactId>helloqa</artifactId>
+          <groupId>edu.cmu.lti.oaqa.openqa</groupId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>edu.cmu.lti.11791.f12.hw2</groupId>
       <artifactId>hw2-team13</artifactId>
       <version>0.0.4</version>
+      <exclusions>
+        <exclusion>
+          <artifactId>helloqa</artifactId>
+          <groupId>edu.cmu.lti.oaqa.openqa</groupId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>edu.cmu.lti.11791.f12.hw2</groupId>
       <artifactId>hw2-team14</artifactId>
       <version>0.0.10</version>
+      <exclusions>
+        <exclusion>
+          <artifactId>helloqa</artifactId>
+          <groupId>edu.cmu.lti.oaqa.openqa</groupId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>edu.cmu.lti.11791.f12.hw2</groupId>
       <artifactId>hw2-team15</artifactId>
       <version>0.0.7</version>
+      <exclusions>
+        <exclusion>
+          <artifactId>helloqa</artifactId>
+          <groupId>edu.cmu.lti.oaqa.openqa</groupId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>edu.cmu.lti.11791.f12.hw2</groupId>
       <artifactId>hw2-team16</artifactId>
       <version>0.0.10</version>
+      <exclusions>
+        <exclusion>
+          <artifactId>helloqa</artifactId>
+          <groupId>edu.cmu.lti.oaqa.openqa</groupId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>edu.cmu.lti.11791.f12.hw2</groupId>
       <artifactId>hw2-team17</artifactId>
       <version>1.0.10</version>
+      <exclusions>
+        <exclusion>
+          <artifactId>helloqa</artifactId>
+          <groupId>edu.cmu.lti.oaqa.openqa</groupId>
+        </exclusion>
+      </exclusions>
     </dependency>
     <dependency>
       <groupId>edu.cmu.lti.11791.f12.hw2</groupId>
       <artifactId>hw2-team18</artifactId>
       <version>0.0.6</version>
+      <exclusions>
+        <exclusion>
+          <artifactId>helloqa</artifactId>
+          <groupId>edu.cmu.lti.oaqa.openqa</groupId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>edu.cmu.lti.oaqa.openqa</groupId>
+      <artifactId>helloqa</artifactId>
+      <version>1.0.1</version>
     </dependency>
   </dependencies>
   <scm>

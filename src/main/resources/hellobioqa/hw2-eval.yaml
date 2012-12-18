@@ -17,11 +17,11 @@ pipeline:
     options: |
       # default
       - inherit: helloqa.keyterm.simple
-      # hw2-team01-0.0.7
+      # hw2-team01-0.0.8
       - inherit: hellobioqa.team01.keyterm.null
       # hw2-team02-1.0.6
       - inherit: hellobioqa.team02.keyterm.keyterm
-      # hw2-team03-0.0.10
+      # hw2-team03-0.0.11
       - inherit: hellobioqa.team03.keyterm.team03-keyterm
       # hw2-team05-0.0.20
       - inherit: hellobioqa.keyterm.parser
@@ -29,7 +29,7 @@ pipeline:
       - inherit: hellobioqa.team06.keyterm.Shu_Hao_DisExtractor
       # hw2-team07-0.0.20
       - inherit: hellobioqa.team07.huanchez.agg-keyterm-extractor
-      # hw2-team08-0.0.13
+      # hw2-team08-0.0.19
       - inherit: hellobioqa.team08.combination-extractor
       # hw2-team09-3.0.2
       - inherit: hellobioqa.team09.keyterm-lingpeng
@@ -56,7 +56,7 @@ pipeline:
     options: |
       # default
       - inherit: base.noop
-      # hw2-team01-0.0.7
+      # hw2-team01-0.0.8
       - pipeline:  
         - inherit: hellobioqa.team01.keyterm.bannerGenes # banner-keyterm-updater
         - inherit: hellobioqa.team01.keyterm.bannerDiseases # banner-keyterm-updater
@@ -88,7 +88,7 @@ pipeline:
       - inherit: hellobioqa.retrieval.simple-solr-strategist
       # hw2-team02-1.0.6
       - inherit: hellobioqa.team02.retrieval.retrieval
-      # hw2-team03-0.0.10
+      # hw2-team03-0.0.11
       - inherit: hellobioqa.team03.retrieval.team03-solr-strategist
       # hw2-team04-0.0.82
       - inherit: hellobioqa.team04.retrieval.Team04RetrievalStrategistAsterisk
@@ -98,7 +98,7 @@ pipeline:
       - inherit: hellobioqa.team06.retrieval.simple-solr-strategist
       # hw2-team07-0.0.20
       - inherit: hellobioqa.retrieval.expanded-bio-solr-strategist
-      # hw2-team08-0.0.13
+      # hw2-team08-0.0.19
       - inherit: hellobioqa.retrieval.query-expansion-strategist
       # hw2-team09-3.0.2
       - inherit: hellobioqa.team09.mysimple-solr-strategist
@@ -129,7 +129,7 @@ pipeline:
       - inherit: hellobioqa.passage.simple
       # hw2-team02-1.0.6
       - inherit: hellobioqa.team02.passage.passage
-      # hw2-team03-0.0.10
+      # hw2-team03-0.0.11
       - inherit: hellobioqa.team03.passage.team03-passage
       # hw2-team04-0.0.82
       - inherit: hellobioqa.team04.passage.SentencedPassageExtractor
