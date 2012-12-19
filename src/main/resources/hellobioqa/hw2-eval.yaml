@@ -29,13 +29,13 @@ pipeline:
       - inherit: hellobioqa.team06.keyterm.Shu_Hao_DisExtractor
       # hw2-team07-0.0.20
       - inherit: hellobioqa.team07.huanchez.agg-keyterm-extractor
-      # hw2-team08-0.0.21
+      # hw2-team08-0.0.24
       - inherit: hellobioqa.team08.combination-extractor
       # hw2-team09-3.0.2
       - inherit: hellobioqa.team09.keyterm-lingpeng
       # hw2-team11-0.0.9
       - inherit: hellobioqa.team11.keyterm.zhiqilKeytermExtractor
-      # hw2-team12-0.0.6
+      # hw2-team12-0.0.7
       - inherit: hellobioqa.team12.keyterm.PhraseChunkKeyTermExtractor
       # hw2-team13-0.0.4
       - inherit: hellobioqa.team13.keyterm.KeytermExtractorLu
@@ -43,8 +43,8 @@ pipeline:
       - inherit: hellobioqa.team14.keyterm.extended_keyterm
       # hw2-team15-0.0.7
       - inherit: hellobioqa.team15.keyterm.CthayurPosTagKeyTermExtractorDescriptor
-      # hw2-team16-0.0.10
-      - inherit: hellobioqa.keyterm.shirley-keyterm-extractor
+      # hw2-team16-0.0.12
+      - inherit: hellobioqa.keyterm.team16-keyterm-extractor
       # hw2-team17-1.0.14
       - inherit: hellobioqa.team17.keyterm.team17-keyterm-extractor
       # hw2-team18-0.0.6
@@ -98,7 +98,7 @@ pipeline:
       - inherit: hellobioqa.team06.retrieval.simple-solr-strategist
       # hw2-team07-0.0.20
       - inherit: hellobioqa.retrieval.expanded-bio-solr-strategist
-      # hw2-team08-0.0.21
+      # hw2-team08-0.0.24
       - inherit: hellobioqa.retrieval.query-expansion-strategist
       # hw2-team09-3.0.2
       - inherit: hellobioqa.team09.mysimple-solr-strategist
@@ -106,7 +106,7 @@ pipeline:
       - inherit: hellobioqa.team10.retrieval.alkesh-synonyms-solr-strategist
       # hw2-team11-0.0.9
       - inherit: hellobioqa.team11.retrieval.simple-solr-strategist
-      # hw2-team12-0.0.6
+      # hw2-team12-0.0.7
       - inherit: hellobioqa.team12.retrieval.backoff-solr-strategist
       # hw2-team13-0.0.4
       - inherit: hellobioqa.team13.retrieval.ThirdRetrievalStrategistLu
@@ -114,8 +114,8 @@ pipeline:
       - inherit: hellobioqa.retrieval.simple-solr-strategist
       # hw2-team15-0.0.7
       - inherit: hellobioqa.team15.retrieval.mingyans-solr-strategist
-      # hw2-team16-0.0.10
-      - inherit: hellobioqa.retrieval.heuristic-solr-strategist
+      # hw2-team16-0.0.12
+      - inherit: hellobioqa.retrieval.team16-heuristic-solr-strategist
       # hw2-team17-1.0.14
       - inherit: hellobioqa.team17.retrieval.team17-solr-strategist
       # hw2-team18-0.0.6
@@ -145,7 +145,7 @@ pipeline:
       - inherit: hellobioqa.team09.lingpengext
       # hw2-team10-0.0.5
       - inherit: hellobioqa.team10.passage.alkesh-solr-leganspan-passage
-      # hw2-team12-0.0.6
+      # hw2-team12-0.0.7
       - inherit: hellobioqa.team12.passage.BaseBioPassage
       # hw2-team13-0.0.4
       - inherit: hellobioqa.team13.passage.PassageExtractorPeter
@@ -153,8 +153,8 @@ pipeline:
       - inherit: hellobioqa.team14.passage.passage
       # hw2-team15-0.0.7
       - inherit: hellobioqa.team15.passage.mingyans-passage
-      # hw2-team16-0.0.10
-      - inherit: hellobioqa.passage.sesh-passage-extractor
+      # hw2-team16-0.0.12
+      - inherit: hellobioqa.passage.team16-passage-extractor
       # hw2-team17-1.0.14
       - inherit: hellobioqa.team17.passage.team17-passage-extract
       # hw2-team18-0.0.6
