@@ -35,7 +35,7 @@ pipeline:
       - inherit: hellobioqa.team09.keyterm-lingpeng
       # hw2-team11-0.0.9
       - inherit: hellobioqa.team11.keyterm.zhiqilKeytermExtractor
-      # hw2-team12-0.0.6
+      # hw2-team12-0.0.7
       - inherit: hellobioqa.team12.keyterm.PhraseChunkKeyTermExtractor
       # hw2-team13-0.0.4
       - inherit: hellobioqa.team13.keyterm.KeytermExtractorLu
@@ -106,7 +106,7 @@ pipeline:
       - inherit: hellobioqa.team10.retrieval.alkesh-synonyms-solr-strategist
       # hw2-team11-0.0.9
       - inherit: hellobioqa.team11.retrieval.simple-solr-strategist
-      # hw2-team12-0.0.6
+      # hw2-team12-0.0.7
       - inherit: hellobioqa.team12.retrieval.backoff-solr-strategist
       # hw2-team13-0.0.4
       - inherit: hellobioqa.team13.retrieval.ThirdRetrievalStrategistLu
@@ -145,7 +145,7 @@ pipeline:
       - inherit: hellobioqa.team09.lingpengext
       # hw2-team10-0.0.5
       - inherit: hellobioqa.team10.passage.alkesh-solr-leganspan-passage
-      # hw2-team12-0.0.6
+      # hw2-team12-0.0.7
       - inherit: hellobioqa.team12.passage.BaseBioPassage
       # hw2-team13-0.0.4
       - inherit: hellobioqa.team13.passage.PassageExtractorPeter
