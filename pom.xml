@@ -266,6 +266,11 @@
       <artifactId>cse-framework</artifactId>
       <version>2.2.6</version>
     </dependency>
+    <dependency>
+      <groupId>edu.cmu.lti.oaqa.ecd</groupId>
+      <artifactId>uima-ecd</artifactId>
+      <version>2.2.7-SNAPSHOT</version>
+    </dependency>
   </dependencies>
   <scm>
     <url>git@github.com:ziy/hw2-eval.git</url>
