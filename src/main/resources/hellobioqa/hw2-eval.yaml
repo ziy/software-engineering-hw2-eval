@@ -23,7 +23,7 @@ pipeline:
       - inherit: hellobioqa.team02.keyterm.keyterm
       # hw2-team03-0.0.11
       - inherit: hellobioqa.team03.keyterm.team03-keyterm
-      # hw2-team05-0.0.20
+      # hw2-team05-0.0.21
       - inherit: hellobioqa.keyterm.parser
       # hw2-team06-0.0.7
       - inherit: hellobioqa.team06.keyterm.Shu_Hao_DisExtractor
@@ -92,7 +92,7 @@ pipeline:
       - inherit: hellobioqa.team03.retrieval.team03-solr-strategist
       # hw2-team04-0.0.82
       - inherit: hellobioqa.team04.retrieval.Team04RetrievalStrategistAsterisk
-      # hw2-team05-0.0.20
+      # hw2-team05-0.0.21
       - inherit: hellobioqa.retrieval.husky-strategist
       # hw2-team06-0.0.7
       - inherit: hellobioqa.team06.retrieval.simple-solr-strategist
@@ -133,7 +133,7 @@ pipeline:
       - inherit: hellobioqa.team03.passage.team03-passage
       # hw2-team04-0.0.82
       - inherit: hellobioqa.team04.passage.SentencedPassageExtractor
-      # hw2-team05-0.0.20
+      # hw2-team05-0.0.21
       - inherit: hellobioqa.passage.phani
       # hw2-team06-0.0.20
       - inherit: hellobioqa.team06.passage.simple
