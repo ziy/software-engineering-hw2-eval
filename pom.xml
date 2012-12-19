@@ -231,7 +231,7 @@
     <dependency>
       <groupId>edu.cmu.lti.11791.f12.hw2</groupId>
       <artifactId>hw2-team16</artifactId>
-      <version>0.0.10</version>
+      <version>0.0.12</version>
       <exclusions>
         <exclusion>
           <artifactId>helloqa</artifactId>
