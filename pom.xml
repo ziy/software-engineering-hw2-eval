@@ -261,6 +261,11 @@
         </exclusion>
       </exclusions>
     </dependency>
+    <dependency>
+      <groupId>edu.cmu.lti.oaqa.cse</groupId>
+      <artifactId>cse-framework</artifactId>
+      <version>2.2.5</version>
+    </dependency>
   </dependencies>
   <scm>
     <url>git@github.com:ziy/hw2-eval.git</url>
