@@ -264,7 +264,12 @@
     <dependency>
       <groupId>edu.cmu.lti.oaqa.cse</groupId>
       <artifactId>cse-framework</artifactId>
-      <version>2.2.5</version>
+      <version>2.2.6</version>
+    </dependency>
+    <dependency>
+      <groupId>edu.cmu.lti.oaqa.ecd</groupId>
+      <artifactId>uima-ecd</artifactId>
+      <version>2.2.7-SNAPSHOT</version>
     </dependency>
   </dependencies>
   <scm>
