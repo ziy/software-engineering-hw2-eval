@@ -11,6 +11,10 @@
       <id>oaqa</id>
       <url>http://mu.lti.cs.cmu.edu:8081/nexus/content/groups/course</url>
     </repository>
+    <repository>
+      <id>sonatype-snapshot</id>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </repository>
   </repositories>
   <distributionManagement>
     <repository>
