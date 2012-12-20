@@ -43,7 +43,7 @@ pipeline:
       - inherit: hellobioqa.team14.keyterm.extended_keyterm
       # hw2-team15-0.0.7
       - inherit: hellobioqa.team15.keyterm.CthayurPosTagKeyTermExtractorDescriptor
-      # hw2-team16-0.0.12
+      # hw2-team16-0.0.13
       - inherit: hellobioqa.keyterm.team16-keyterm-extractor
       # hw2-team17-1.0.15
       - inherit: hellobioqa.team17.keyterm.team17-keyterm-extractor
@@ -114,7 +114,7 @@ pipeline:
       - inherit: hellobioqa.retrieval.simple-solr-strategist
       # hw2-team15-0.0.7
       - inherit: hellobioqa.team15.retrieval.mingyans-solr-strategist
-      # hw2-team16-0.0.12
+      # hw2-team16-0.0.13
       - inherit: hellobioqa.retrieval.team16-heuristic-solr-strategist
       # hw2-team17-1.0.15
       - inherit: hellobioqa.team17.retrieval.team17-solr-strategist
@@ -153,7 +153,7 @@ pipeline:
       - inherit: hellobioqa.team14.passage.passage
       # hw2-team15-0.0.7
       - inherit: hellobioqa.team15.passage.mingyans-passage
-      # hw2-team16-0.0.12
+      # hw2-team16-0.0.13
       - inherit: hellobioqa.passage.team16-passage-extractor
       # hw2-team17-1.0.15
       - inherit: hellobioqa.team17.passage.team17-passage-extract
