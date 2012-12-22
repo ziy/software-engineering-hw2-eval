@@ -1,0 +1,184 @@
+configuration: 
+  name: hw2-eval
+  author: ziy
+  
+persistence-provider:
+  inherit: helloqa.db.local-persistence-provider
+
+collection-reader:
+  inherit: hellobioqa.collection.decorated-collection-reader
+  dataset: TRECGEN06
+  file: /input/trecgen06.txt
+
+pipeline:
+  # keyterm extractor
+  - inherit: jdbc.sqlite.cse.phase  
+    name: keyterm-extractor
+    options: |
+      # default
+      - inherit: helloqa.keyterm.simple
+      # hw2-team01-0.0.11
+      - inherit: hellobioqa.team01.keyterm.null
+      # hw2-team02-1.0.7
+      - inherit: hellobioqa.team02.keyterm.keyterm
+      # hw2-team03-0.0.11
+      - inherit: hellobioqa.team03.keyterm.team03-keyterm
+      # hw2-team05-0.0.22
+      - inherit: hellobioqa.keyterm.parser
+      # hw2-team06-0.0.7
+      - inherit: hellobioqa.team06.keyterm.Shu_Hao_DisExtractor
+      # hw2-team07-0.0.20
+      - inherit: hellobioqa.team07.huanchez.agg-keyterm-extractor
+      # hw2-team08-0.0.24
+      - inherit: hellobioqa.team08.combination-extractor
+      # hw2-team09-3.0.2
+      - inherit: hellobioqa.team09.keyterm-lingpeng
+      # hw2-team11-0.0.9
+      - inherit: hellobioqa.team11.keyterm.zhiqilKeytermExtractor
+      # hw2-team12-0.0.7
+      - inherit: hellobioqa.team12.keyterm.PhraseChunkKeyTermExtractor
+      # hw2-team13-0.0.5
+      - inherit: hellobioqa.team13.keyterm.KeytermExtractorLu
+      # hw2-team14-0.0.11
+      - inherit: hellobioqa.team14.keyterm.extended_keyterm
+      # hw2-team15-0.0.7
+      - inherit: hellobioqa.team15.keyterm.CthayurPosTagKeyTermExtractorDescriptor
+      # hw2-team16-0.0.14
+      - inherit: hellobioqa.keyterm.team16-keyterm-extractor
+      # hw2-team17-1.0.15
+      - inherit: hellobioqa.team17.keyterm.team17-keyterm-extractor
+      # hw2-team18-0.0.6
+      - inherit: hellobioqa.team18.keyterm.aggregated-extractor
+
+  # keyterm updater
+  - inherit: jdbc.sqlite.cse.phase
+    name: keyterm-updater
+    options: |
+      # default
+      - inherit: base.noop
+      # hw2-team01-0.0.10
+      - pipeline:  
+        - inherit: hellobioqa.team01.keyterm.bannerGenes # banner-keyterm-updater
+        - inherit: hellobioqa.team01.keyterm.bannerDiseases # banner-keyterm-updater
+        - inherit: hellobioqa.team01.keyterm.lingpipe # lingpipe-keyterm-updater
+        - inherit: hellobioqa.team01.keyterm.verb # verb-keyterm-updater
+        - inherit: hellobioqa.team01.keyterm.mesh # mesh-keyterm-updater
+        - inherit: hellobioqa.team01.keyterm.ruleBased # rule-keyterm-updater
+        - inherit: hellobioqa.team01.keyterm.deduplicate # deduplicate-keyterm-updater
+      # hw2-team06-0.0.7
+      - pipeline:
+        - inherit: hellobioqa.team06.keyterm.ShuLingPipeTermUpdater # keyterm-updater1
+        - inherit: hellobioqa.team06.keyterm.ShuBannerUpdater # keyterm-updater2
+        - inherit: hellobioqa.team06.keyterm.ShuNLPVerbTermUpdater # keyterm-updater3
+      # hw2-team07-0.0.20
+      - pipeline:  
+        - inherit: hellobioqa.team07.huanchez.crf-keyterm-extractor # keyterm-updator1
+        - inherit: hellobioqa.team07.huanchez.abner-keyterm-extractor # keyterm-updator2
+        - inherit: hellobioqa.team07.huanchez.hmm-keyterm-extractor # keyterm-updator3
+        - inherit: hellobioqa.team07.mengweid.geneextractor # keyterm-updator4
+        - inherit: hellobioqa.team07.huanchez.ts-keyterm-extractor # keyterm-updator5
+      # hw2-team09-3.0.2
+      - inherit: hellobioqa.team09.keyterm-exampleprocessor # keyterm-processor
+      
+  # retrieval strategist
+  - inherit: jdbc.sqlite.cse.phase 
+    name: retrieval-strategist
+    options: |
+      # default
+      - inherit: hellobioqa.retrieval.simple-solr-strategist
+      # hw2-team02-1.0.7
+      - inherit: hellobioqa.team02.retrieval.retrieval
+      # hw2-team03-0.0.11
+      - inherit: hellobioqa.team03.retrieval.team03-solr-strategist
+      # hw2-team04-0.0.82
+      - inherit: hellobioqa.team04.retrieval.Team04RetrievalStrategistAsterisk
+      # hw2-team05-0.0.22
+      - inherit: hellobioqa.retrieval.husky-strategist
+      # hw2-team06-0.0.7
+      - inherit: hellobioqa.team06.retrieval.simple-solr-strategist
+      # hw2-team07-0.0.20
+      - inherit: hellobioqa.retrieval.expanded-bio-solr-strategist
+      # hw2-team08-0.0.24
+      - inherit: hellobioqa.retrieval.query-expansion-strategist
+      # hw2-team09-3.0.2
+      - inherit: hellobioqa.team09.mysimple-solr-strategist
+      # hw2-team10-0.0.5
+      - inherit: hellobioqa.team10.retrieval.alkesh-synonyms-solr-strategist
+      # hw2-team11-0.0.9
+      - inherit: hellobioqa.team11.retrieval.simple-solr-strategist
+      # hw2-team12-0.0.7
+      - inherit: hellobioqa.team12.retrieval.backoff-solr-strategist
+      # hw2-team13-0.0.5
+      - inherit: hellobioqa.team13.retrieval.ThirdRetrievalStrategistLu
+      # hw2-team14-0.0.11
+      - inherit: hellobioqa.retrieval.simple-solr-strategist
+      # hw2-team15-0.0.7
+      - inherit: hellobioqa.team15.retrieval.mingyans-solr-strategist
+      # hw2-team16-0.0.14
+      - inherit: hellobioqa.retrieval.team16-heuristic-solr-strategist
+      # hw2-team17-1.0.15
+      - inherit: hellobioqa.team17.retrieval.team17-solr-strategist
+      # hw2-team18-0.0.6
+      - inherit: hellobioqa.team18.retrieval.retrieval-base
+
+  # passage extractor
+  - inherit: jdbc.sqlite.cse.phase
+    name: passage-extractor
+    options: |
+      # default
+      - inherit: hellobioqa.passage.simple
+      # hw2-team02-1.0.7
+      - inherit: hellobioqa.team02.passage.passage
+      # hw2-team03-0.0.11
+      - inherit: hellobioqa.team03.passage.team03-passage
+      # hw2-team04-0.0.82
+      - inherit: hellobioqa.team04.passage.SentencedPassageExtractor
+      # hw2-team05-0.0.22
+      - inherit: hellobioqa.passage.phani
+      # hw2-team06-0.0.20
+      - inherit: hellobioqa.team06.passage.simple
+      # hw2-team07-0.0.20
+      - inherit: hellobioqa.passage.MITRE_revised
+      # hw2-team08-0.0.5 # can be removed
+      - inherit: hellobioqa.passage.nooverlaps-passage-extractor
+      # hw2-team09-3.0.2
+      - inherit: hellobioqa.team09.lingpengext
+      # hw2-team10-0.0.5
+      - inherit: hellobioqa.team10.passage.alkesh-solr-leganspan-passage
+      # hw2-team12-0.0.7
+      - inherit: hellobioqa.team12.passage.BaseBioPassage
+      # hw2-team13-0.0.5
+      - inherit: hellobioqa.team13.passage.PassageExtractorPeter
+      # hw2-team14-0.0.11
+      - inherit: hellobioqa.team14.passage.passage
+      # hw2-team15-0.0.7
+      - inherit: hellobioqa.team15.passage.mingyans-passage
+      # hw2-team16-0.0.14
+      - inherit: hellobioqa.passage.team16-passage-extractor
+      # hw2-team17-1.0.15
+      - inherit: hellobioqa.team17.passage.team17-passage-extract
+      # hw2-team18-0.0.6
+      - inherit: hellobioqa.team18.passage.PassageRetrieval
+      
+  - inherit: helloqa.eval.keyterm-aggregator-consumer
+
+  - inherit: jdbc.eval.retrieval-aggregator-consumer
+      
+  - inherit: helloqa.eval.passage-map-aggregator-consumer      
+    
+post-process: 
+  - inherit: helloqa.eval.keyterm-evaluator-consumer
+  - inherit: report.csv-report-generator
+    builders: |
+      - inherit: helloqa.report.keyterm-report-component
+
+  - inherit: jdbc.eval.retrieval-evaluator-consumer
+  - inherit: report.csv-report-generator
+    builders: |
+      - inherit: jdbc.report.f-measure-report-component
+          
+  - inherit: helloqa.eval.passage-map-evaluator-consumer
+  - inherit: report.csv-report-generator
+    builders: |
+      - inherit: helloqa.report.map-report-component
+  
